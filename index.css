@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+  }
+  
+  * {
+    box-sizing: border-box;
+    line-height: normal;
+    font-family: inherit;
+    margin: unset;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  input {
+    background-color: transparent;
+    width: 100%;
+  }
+  
+  label[floating-label] {
+    position: relative;
+  }
+  
+  label[floating-label] > input[floating-input] {
+    transition: all;
+    transition-duration: 0.25s;
+    outline: none !important;
+    border: none !important;
+    background: transparent !important;
+    max-height: 1.25em;
+    line-height: 1em;
+  }
+  
+  label[floating-label] > input[floating-input]:focus,
+  label[floating-label] > input[floating-input]:not(:placeholder-shown) {
+    outline: none !important;
+  }
+  
+  label[floating-label] > input[floating-input]::placeholder {
+    color: transparent;
+  }
+  
+  label[floating-label] > input[floating-input] ~ div[floating-text] {
+    opacity: unset;
+  }
+  
+  label[floating-label] > div[floating-text] {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: top left;
+    transition: all;
+    transition-duration: 0.25s;
+    opacity: 0;
+    line-height: 1em;
+    pointer-events: none;
+  }
+  
+  label[floating-label="normal"] > input[floating-input]:focus,
+  label[floating-label="normal"] > input[floating-input]:not(:placeholder-shown) {
+    & ~ div[floating-text] {
+      top: 0em;
+      transform: translateY(-50%) scale(85%);
+      margin-right: -0.15em;
+      margin-left: -0.15em;
+      padding-right: 0.15em;
+      padding-left: 0.15em;
+      backdrop-filter: blur(3em);
+    }
+  }
+  
+  label[floating-label="contained"] > input[floating-input]:focus,
+  label[floating-label="contained"] > input[floating-input]:not(:placeholder-shown) {
+    transform: translateY(0.5em);
+  }
+  
+  label[floating-label="contained"] > input[floating-input] ~ div[floating-text] {
+    top: calc(50% - 1.25em);
+    transform: scale(85%);
+  }
+  
+  a {
+    text-decoration: none;
+    display: block;
+  }
+  
+  [type="checkbox"] {
+    margin: 0px;
+  }
+  
+  [type="text"],
+  input:where(:not([type])),
+  [type="email"],
+  [type="url"],
+  [type="password"],
+  [type="number"],
+  [type="date"],
+  [type="datetime-local"],
+  [type="month"],
+  [type="search"],
+  [type="tel"],
+  [type="time"],
+  [type="week"],
+  [multiple],
+  textarea,
+  select,
+  button {
+    appearance: none;
+    background-color: transparent;
+    border-color: unset;
+    border-width: 0;
+    border-radius: unset;
+    padding: unset;
+    font-size: unset;
+    line-height: unset;
+    color: inherit;
+  }
+  
+  input:focus-visible,
+  [multiple]:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: none;
+  }

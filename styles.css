@@ -1,0 +1,248 @@
+/*---------------------------------------- 
+1. CSS Variables 
+----------------------------------------*/
+:root {
+    /*------Color variables------*/
+    --black_900_3f: #0000003f;
+    --black_900_99: #00000099;
+    --black_900_9b: #0000009b;
+    --cyan_50: #e6fffa;
+    --gray_300: #e5e5e5;
+    --gray_400: #c1baba;
+    --gray_50: #f8f8f8;
+    --green_700: #377e4c;
+    --red_a700: #df0303;
+    --teal_400: #2babff;
+    --teal_900: #13623d;
+  
+    /*------Shadow variables------*/
+    --shadow-xs: 0 4px 3px 0 #0000003f;
+  
+    /*------Border radius variables------*/
+    --radius-xs: 5px;
+  
+    /*------Spacing variables------*/
+    --space-xs: 20px;
+    --space-sm: 94px;
+  }
+  
+  /*---------------------------------------- 
+  2. Common CSS 
+  ----------------------------------------*/
+  .sign-up-p {
+    height: 1024px;
+    background-color: var(--gray_50);
+    background-image: url(../public/images/img_forget_password.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: 1050px) {
+      height: auto;
+    }
+  }
+  
+  .rowfirstname {
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width: 1050px) {
+      padding-left: var(--space-xs);
+      padding-right: var(--space-xs);
+    }
+  }
+  
+  .stackwelcomebac {
+    height: 1024px;
+    width: 100%;
+    position: relative;
+    align-content: center;
+    @media only screen and (max-width: 1050px) {
+      height: auto;
+    }
+  }
+  
+  .rowlogokfupmone-1 {
+    width: auto; /* Adjust to keep aspect ratio */
+    display: flex;
+    align-items: start;
+    @media only screen and (max-width: 1050px) {
+      flex-direction: column;
+    }
+  }
+  
+  .logokfupmone {
+    height: 64px;
+    width: auto; /* Adjust to keep aspect ratio */
+    object-fit: contain;
+  }
+  
+  .emailaddress {
+    color: var(--black_900_9b) !important;
+  }
+  
+  .welcomeback-1 {
+    margin-top: 362px;
+  }
+  
+  .sign-up-1 {
+    color: var(--cyan_50) !important;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-size: 15px;
+    background-color: var(--green_700) !important;
+    box-shadow: 0 4px 3px 0 #0000003f !important;
+    height: 54px;
+    min-width: 128px;
+    border-radius: 5px !important;
+    @media only screen and (max-width: 550px) {
+      padding-left: var(--space-xs);
+      padding-right: var(--space-xs);
+    }
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+  height: 60px;
+  width: 300px;
+}
+
+.menu-icon {
+    height: 30px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.content {
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #377e4c;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 10px 0;
+    color: #666;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.button {
+    background-color: #377e4c;
+    color: #e6fffa;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-decoration: none; /* Remove underline from link */
+    display: inline-block; /* Make link behave like a button */
+}
+
+.button:hover {
+    background-color: #2f6b3f;
+}
+
+.image {
+  max-width: 300px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        margin-top: 20px;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #f8f8f8;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+ /* Media Queries for Mobile View */
+ @media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+    .buttons {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        gap: 15px; /* Reduce gap between buttons */
+        width: 100%; /* Full width for buttons */
+    }
+    .button {
+        width: 80%; /* Make buttons wider */
+        padding: 15px; /* Adjust padding for better touch targets */
+        font-size: 1.2rem; /* Larger text for readability */
+        text-decoration: none; /* Remove underline from link */
+        display: inline-block; /* Make link behave like a button */
+    }
+}

@@ -1,0 +1,193 @@
+/*---------------------------------------- 
+1. Input CSS 
+----------------------------------------*/
+.ui.input.square {
+    border-radius: 0px;
+  }
+  
+  .ui.input.size-xs {
+    height: 74px;
+    padding-left: 26px;
+    padding-right: 26px;
+    font-size: 18px;
+  }
+  
+  .ui.input.size-sm {
+    height: 148px;
+    padding-left: 26px;
+    padding-right: 26px;
+    font-size: 18px;
+  }
+  
+  .ui.input.fill.gray_50 {
+    background-color: var(--gray_50);
+    color: var(--green_700);
+  }
+  
+  .ui.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: text;
+    font-size: 18px;
+    background-color: var(--gray_50);
+    border: 1px solid var(--gray_400);
+  }
+  
+  /*---------------------------------------- 
+  2. Floatingtextfield CSS 
+  ----------------------------------------*/
+  .ui.floatingtextfield.square {
+    border-radius: 0px;
+  }
+  
+  .ui.floatingtextfield.size-xs {
+    height: 74px;
+    padding-left: 26px;
+    padding-right: 26px;
+    font-size: 18px;
+  }
+  
+  .ui.floatingtextfield.fxtxoutlinegray400.gray_50 {
+    background-color: var(--gray_50);
+    border: 1px solid var(--gray_400);
+  }
+  
+  .ui.floatingtextfield {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: text;
+    gap: 8px;
+  }
+  
+  /*---------------------------------------- 
+  3. Checkbox CSS 
+  ----------------------------------------*/
+  .ui.checkbox.size-xs {
+    height: 12px;
+    width: 12px;
+  }
+  
+  .ui.checkbox.primary {
+    accent-color: #377e4c;
+    border: 1px solid var(--green_700);
+  }
+  
+  .ui.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  /*---------------------------------------- 
+  4. Button CSS 
+  ----------------------------------------*/
+  .ui.button.round {
+    border-radius: var(--radius-xs);
+  }
+  
+  .ui.button.size-xs {
+    height: 52px;
+    padding-left: 30px;
+    padding-right: 24px;
+    font-size: 20px;
+  }
+  
+  .ui.button.size-sm {
+    height: 54px;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-size: 15px;
+  }
+  
+  .ui.button.fill.gray_50 {
+    background-color: var(--gray_50);
+    color: var(--green_700);
+  }
+  
+  .ui.button.fill.green_700 {
+    background-color: var(--green_700);
+    box-shadow: var(--shadow-xs);
+    color: var(--cyan_50);
+  }
+  
+  .ui.button {
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: var(--radius-xs);
+  }
+  
+  /*---------------------------------------- 
+  5. Text CSS 
+  ----------------------------------------*/
+  .ui.text.size-textxs {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .ui.text.size-texts {
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    @media only screen and (max-width: 1050px) {
+      font-size: 23px;
+    }
+    @media only screen and (max-width: 550px) {
+      font-size: 21px;
+    }
+  }
+  
+  .ui.text.size-textmd {
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    @media only screen and (max-width: 1050px) {
+      font-size: 30px;
+    }
+    @media only screen and (max-width: 550px) {
+      font-size: 28px;
+    }
+  }
+  
+  .ui.text {
+    color: var(--black_900_99);
+    font-family: Poppins;
+  }
+  
+  /*---------------------------------------- 
+  6. Heading CSS 
+  ----------------------------------------*/
+  .ui.heading.size-headingxs {
+    font-size: 30px;
+    font-weight: 700;
+    font-style: bold;
+    @media only screen and (max-width: 1050px) {
+      font-size: 28px;
+    }
+    @media only screen and (max-width: 550px) {
+      font-size: 26px;
+    }
+  }
+  
+  .ui.heading {
+    color: var(--green_700);
+    font-family: Poppins;
+  }
+  
+  /*---------------------------------------- 
+  7. Container CSS 
+  ----------------------------------------*/
+  .container-xs {
+    max-width: 1368px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
